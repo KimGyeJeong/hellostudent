@@ -84,7 +84,8 @@ async function run() {
 
     const apiserver = new ApiServer();
     try {
-        await apiserver.listen(3000, '127.0.0.1');
+        // await apiserver.listen(3000, '127.0.0.1');
+        await apiserver.listen(3000, '0.0.0.0');    //connect success
         
     } catch (err) {
         console.log(err);
