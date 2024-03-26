@@ -5,6 +5,7 @@ client/hellostudent_client/build/*
 client/hellostudent_client/ios/*
 client/hellostudent_client/linux/*
 client/hellostudent_client/macos/*
+client/hellostudent_client/web/*
 client/hellostudent_client/windows/*
 
 server/node_modules/*
