@@ -1,0 +1,12 @@
+client/.idea/*
+client/hellostudent_client/.idea/*
+client/hellostudent_client/android/*
+client/hellostudent_client/build/*
+client/hellostudent_client/ios/*
+client/hellostudent_client/linux/*
+client/hellostudent_client/macos/*
+client/hellostudent_client/windows/*
+
+server/node_modules/*
+server/config/*
+server/package-lock.json
