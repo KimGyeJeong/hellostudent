@@ -9,6 +9,8 @@ client/hellostudent_client/web/*
 client/hellostudent_client/windows/*
 
 server/node_modules/*
-server/config/*
+server/src/config/*
 server/package-lock.json
 .idea/*
+server/src/config/mariaConfig.js
+server/src/config/dbConfig.js
