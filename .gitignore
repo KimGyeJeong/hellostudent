@@ -10,3 +10,4 @@ client/hellostudent_client/windows/*
 server/node_modules/*
 server/config/*
 server/package-lock.json
+.idea/*
