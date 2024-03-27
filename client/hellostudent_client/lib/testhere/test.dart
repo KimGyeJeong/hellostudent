@@ -21,9 +21,17 @@ class TestMain extends StatelessWidget {
             Text('22'),
             ElevatedButton(
                 onPressed: () {
-                  GoRouter.of(context).go('/testhere');
+                  GoRouter.of(context).go('/');
                 },
-                child: Text('test'))
+                child: Text('main')),
+            SizedBox(
+              height: 20,
+            ),
+            TextField(
+              decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Enter your username'),
+            ),
           ],
         ),
       ),

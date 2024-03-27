@@ -6,8 +6,8 @@ const TestConnectMaria = require('../models/testConnectMaria');
 
 class ApiServer{
     constructor() {
-        // const testConnect = new TestConnect();
-        const testconnectmaria = new TestConnectMaria();
+        const testConnect = new TestConnect();
+        // const testconnectmaria = new TestConnectMaria();
         
         fastify.addHook('onRequest', async (request, reply) => {
             // Before
@@ -24,10 +24,10 @@ class ApiServer{
 
         fastify.get("/", async (request, reply) => {
             console.log('get /');
-            // let result = await testConnect.oracleConnection();
-            let result2 = await testconnectmaria.mariaConnection();
-            // return {hello: "world", result: result.rows[0].SYSDATE, result2 : result2[0]};
-            return {hello: "world", result2 : result2[0]};
+            let result = await testConnect.oracleConnection();
+            // let result2 = await testconnectmaria.mariaConnection();
+            return {hello: "world", result: result.rows[0].SYSDATE, result2 : result2[0]};
+            // return {hello: "world", result2 : result2[0]};
         });
     }
 
